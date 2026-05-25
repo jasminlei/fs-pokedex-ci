@@ -15,6 +15,26 @@ module.exports = [
   },
   js.configs.recommended,
   {
+    files: ['e2e-tests/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2018,
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+  {
+    files: ['playwright.config.js'],
+    languageOptions: {
+      ecmaVersion: 2018,
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+  {
     files: ['jest.setup.js'],
     languageOptions: {
       ecmaVersion: 2018,
