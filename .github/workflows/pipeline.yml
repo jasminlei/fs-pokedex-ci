@@ -43,9 +43,11 @@ jobs:
           retention-days: 7
 
       - name: Setup Flyctl
+        if: ${{ github.event_name == 'push' }}
         uses: superfly/flyctl-actions/setup-flyctl@master
 
       - name: Deploy to Fly.io
+        if: ${{ github.event_name == 'push' }}
         run: flyctl deploy --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
