@@ -18,5 +18,3 @@ app.get('/version', (req, res) => {
 app.listen(PORT, HOST, () => {
   console.log(`server started on ${HOST}:${PORT}`)
 })
-
-//
