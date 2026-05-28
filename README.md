@@ -15,3 +15,7 @@ Start by running `npm install` inside the project folder
 ## Deployed app
 
 Pokedex is deployed here: https://fs-pokedex-ci.fly.dev/
+
+Repository for other exercises: https://github.com/jasminlei/create-a-dog
+
+(Deployed here: https://create-a-dog.fly.dev/)
